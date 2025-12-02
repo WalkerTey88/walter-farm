@@ -1,9 +1,8 @@
-/*
-  Global styles for the Walter Farm website.
-  Tailwind CSS base, components, and utilities are imported here.
-*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Additional global styles can be added below as needed. */
+html, body {
+  padding: 0;
+  margin: 0;
+}

@@ -1,17 +1,12 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { ReactNode } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import type { Metadata } from 'next';
+import React, { ReactNode } from 'react';
+import './globals.css';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
-/**
- * Root layout for the Walter Farm website.
- * This layout wraps every page with a Navbar, content area, and Footer.
- */
 export const metadata: Metadata = {
-  title: "Walter Farm - Segamat",
-  description:
-    "Walter Farm – Family-friendly farm experience in Segamat, Johor.",
+  title: 'Walter Farm - Segamat',
+  description: 'Walter Farm – Family-friendly farm experience in Segamat, Johor.',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

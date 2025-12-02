@@ -1,8 +1,5 @@
-/**
- * Accommodation page listing Walter Farm's lodging options.
- * This page currently displays placeholder content; actual room data
- * will be fetched and rendered once the back-end and database are integrated.
- */
+// app/accommodation/page.tsx
+// Accommodation listing page. Lists available stays for visitors.
 export default function AccommodationPage() {
   return (
     <div className="space-y-4">

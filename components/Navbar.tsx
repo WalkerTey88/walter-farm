@@ -1,13 +1,12 @@
+// components/Navbar.tsx
+// A responsive navigation bar component. It highlights the current page and
+// collapses into a mobile menu on smaller screens.
 "use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-/**
- * Navigation bar for the Walter Farm website.
- * Includes desktop and mobile layouts with responsive menu toggling.
- */
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/accommodation", label: "Accommodation" },
@@ -29,7 +28,6 @@ export default function Navbar() {
         <Link href="/" className="font-semibold text-lg tracking-tight">
           Walter Farm
         </Link>
-
         {/* Desktop menu */}
         <ul className="hidden md:flex items-center gap-4 text-sm">
           {navItems.map((item) => (
@@ -47,16 +45,14 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-
         {/* Mobile menu button */}
         <button
           className="md:hidden inline-flex items-center justify-center rounded border px-2 py-1 text-sm"
-          onClick={() => setOpen(!open)}
+          onClick={() => setOpen((v) => !v)}
         >
           Menu
         </button>
       </nav>
-
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden border-t bg-white">

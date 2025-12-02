@@ -1,22 +1,18 @@
-/**
- * Home page for the Walter Farm website.
- * This page introduces the farm and links to other sections such as
- * accommodation, activities, and booking. Content is intentionally generic
- * because specific data will be loaded from the database in later phases.
- */
+// app/page.tsx
+// Home page for the Walter Farm website. This page provides a hero section,
+// a brief about section and quick links to the major sections of the site.
 export default function HomePage() {
   return (
     <div className="space-y-10">
-      {/* Hero section with intro text and call-to-action buttons */}
+      {/* Hero Section */}
       <section className="grid md:grid-cols-2 gap-6 items-center">
         <div className="space-y-4">
           <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
             Walter Farm – Segamat, Johor
           </h1>
           <p className="text-sm md:text-base text-neutral-700">
-            A family-friendly farm experience in Segamat. Reconnect with
-            nature, enjoy outdoor activities, and spend quality time with
-            your loved ones.
+            A family-friendly farm experience in Segamat. Reconnect with nature,
+            enjoy outdoor activities, and spend quality time with your loved ones.
           </p>
           <div className="flex gap-3">
             <a
@@ -34,21 +30,21 @@ export default function HomePage() {
           </div>
         </div>
         <div className="h-48 md:h-64 rounded-xl bg-neutral-200 flex items-center justify-center text-xs text-neutral-500">
-          {/* Placeholder for future Walter Farm hero image */}
+          {/* TODO: replace with an actual Walter Farm photo in production */}
           Farm image placeholder
         </div>
       </section>
 
-      {/* About preview section */}
+      {/* About Preview */}
       <section className="space-y-2">
         <h2 className="text-xl font-semibold">About Walter Farm</h2>
         <p className="text-sm text-neutral-700 max-w-3xl">
-          Walter Farm is a nature-based destination in Segamat, Johor,
-          focusing on family-friendly outdoor and farm experiences.
+          Walter Farm is a nature-based destination in Segamat, Johor, focusing on
+          family-friendly outdoor and farm experiences.
         </p>
       </section>
 
-      {/* Quick links to key sections of the site */}
+      {/* Quick Links Grid */}
       <section className="grid md:grid-cols-3 gap-4 text-sm">
         <a
           href="/accommodation"
@@ -56,8 +52,8 @@ export default function HomePage() {
         >
           <h3 className="font-semibold mb-1">Accommodation</h3>
           <p className="text-neutral-700">
-            Farm-style stays for families and groups. Details and
-            availability will be managed from the booking system.
+            Farm-style stays for families and groups. Details and availability managed
+            from the booking system.
           </p>
         </a>
         <a
@@ -76,8 +72,7 @@ export default function HomePage() {
         >
           <h3 className="font-semibold mb-1">Booking</h3>
           <p className="text-neutral-700">
-            Centralised booking flow for stays and experiences at
-            Walter Farm.
+            Centralised booking flow for stays and experiences at Walter Farm.
           </p>
         </a>
       </section>
